@@ -21,7 +21,7 @@ Target DLL:      lmidk-agdi.dll V???
 Dialog DLL:      TCM.DLL V1.36.1.0
  
 <h2>Project:</h2>
-C:\Users\egypt\Documents\Main\Madison\Fall 2018\Classes\210\Week 12\ECE210 Ping Pong\ECE210-Wireless.uvprojx
+C:\Users\egypt\Documents\Main\Madison\Fall 2018\Classes\210\210-Pong\ECE210 Ping Pong\ECE210-Wireless.uvprojx
 Project File Date:  11/30/2018
 
 <h2>Output:</h2>
@@ -29,16 +29,18 @@ Project File Date:  11/30/2018
 Rebuild target 'ECE353-Test-Code'
 assembling startup_TM4C123.s...
 compiling lab_buttons.c...
-compiling system_TM4C123.c...
 compiling main.c...
-main.c(90): warning:  #128-D: loop is not reachable
-    while(1)
-main.c(43): warning:  #177-D: variable "tx_data"  was declared but never referenced
-    uint32_t tx_data;
-main.c: 2 warnings, 0 errors
+main.c(161): warning:  #1-D: last line of file ends without a newline
+  }
+main.c(51): warning:  #177-D: variable "btn_dir"  was declared but never referenced
+  	uint8_t btn_dir;
+main.c(53): warning:  #177-D: variable "start"  was declared but never referenced
+  	bool start = 0;
+main.c: 3 warnings, 0 errors
+compiling system_TM4C123.c...
 linking...
-Program Size: Code=18588 RO-data=4852 RW-data=40 ZI-data=6648  
-".\obj\ece353_base_project.axf" - 0 Error(s), 2 Warning(s).
+Program Size: Code=18988 RO-data=4852 RW-data=40 ZI-data=6648  
+".\obj\ece353_base_project.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -64,10 +66,10 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.1.2
 
    * Component: Keil::Device:Startup:1.0.1
-      Source file:   Device\Source\ARM\startup_TM4C123.s
-      Source file:   Device\Source\system_TM4C123.c
       Include file:  Device\Include\TM4C123\TM4C123.h
-Build Time Elapsed:  00:00:07
+      Source file:   Device\Source\system_TM4C123.c
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
