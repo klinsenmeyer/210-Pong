@@ -383,11 +383,6 @@
           <GroupName>src</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
-            </File>
-            <File>
               <FileName>lab_buttons.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\lab_buttons.c</FilePath>
@@ -401,6 +396,11 @@
               <FileName>ece210_api.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\peripherals\include\ece210_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>sndMain.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sndMain.c</FilePath>
             </File>
           </Files>
         </Group>
