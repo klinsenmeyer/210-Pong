@@ -28,14 +28,13 @@
 int main(void)
 {
 	ece210_initialize_board();
+	ece210_wireless_init(LOCAL_ID, REMOTE_ID);
+	
 	char msg[80];
 	int score0 = 0;
 	int score1 = 0;
 
 	uint32_t rx_data;
-
-	ece210_initialize_board();
-	ece210_wireless_init(LOCAL_ID, REMOTE_ID);
 
 	sprintf(msg, "Score: \n\r%d %d", score0, score1);
 	ece210_lcd_add_msg(msg ,TERMINAL_ALIGN_CENTER,LCD_COLOR_BLUE);
@@ -54,7 +53,7 @@ int main(void)
 				
 				if (score0 == 5)
 				{
-					ece210_lcd_add_msg("PLAYER 1 WINS\n\r",TERMINAL_ALIGN_CENTER,LCD_COLOR_RED);
+					ece210_lcd_add_msg("PLAYER 2 WINS\n\r",TERMINAL_ALIGN_CENTER,LCD_COLOR_RED);
 					break;
 				}
 			}
@@ -65,7 +64,7 @@ int main(void)
 
 				if(score1 == 5)
 				{
-					ece210_lcd_add_msg("PLAYER 2 WINS\n\r",TERMINAL_ALIGN_CENTER,LCD_COLOR_RED);
+					ece210_lcd_add_msg("PLAYER 1 WINS\n\r",TERMINAL_ALIGN_CENTER,LCD_COLOR_RED);
 					break;
 				}
 			}

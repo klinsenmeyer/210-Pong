@@ -1,6 +1,6 @@
 --cpu=Cortex-M4.fp
 ".\obj\lab_buttons.o"
-".\obj\sndmain.o"
+".\obj\main.o"
 "..\ece210_api\ece210.lib"
 ".\obj\startup_tm4c123.o"
 ".\obj\system_tm4c123.o"

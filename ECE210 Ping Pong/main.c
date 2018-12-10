@@ -42,7 +42,7 @@
 
 #define PADDLE_SPEED 5
 #define BALL_SPEED 2
-#define BALL_GAIN 1.05
+#define BALL_GAIN 1.3
 
 #define MAX_SCORE 5
 
@@ -90,7 +90,7 @@ main(void)
 	int y_inc = BALL_SPEED;
 	
 	ece210_initialize_board();
-  ece210_lcd_add_msg("WELCOME TO PONG\rPRESS A BUTTON TO START\r",TERMINAL_ALIGN_CENTER,LCD_COLOR_BLUE);
+  ece210_lcd_add_msg("WELCOME TO PONG PRESS A BUTTON TO START\r",TERMINAL_ALIGN_CENTER,LCD_COLOR_BLUE);
   ece210_wireless_init(LOCAL_ID,REMOTE_ID);
 	
 	ece210_lcd_draw_rectangle (PADDLE_X0, PADDLE_WIDTH, paddle_y0, PADDLE_LENGTH, LCD_COLOR_RED);

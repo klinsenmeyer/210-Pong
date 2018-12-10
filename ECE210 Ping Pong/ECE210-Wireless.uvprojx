@@ -398,9 +398,9 @@
               <FilePath>..\peripherals\include\ece210_api.h</FilePath>
             </File>
             <File>
-              <FileName>sndMain.c</FileName>
+              <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\sndMain.c</FilePath>
+              <FilePath>.\main.c</FilePath>
             </File>
           </Files>
         </Group>
